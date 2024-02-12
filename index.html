@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI English Fairy Tale Generator</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+    <div class="page-container">
+        <header>
+            <div class="d-flex align-items-center flex-column mb-3" style="height: 200px;">
+                <h1 class="mb-auto p-2">AI-Driven English Fairy Tale Generator for Sweet Dreams</h1>
+                <h2 class="mb-auto p-2">Generate Magical Bedtime Stories in a Few Seconds</h2>
+                <p class="mb-auto p-4">Welcome to our magical world with the <strong>AI English Fairy Tale
+                        Generator</strong>, perfect for families to share special bedtime
+                    moments. Our tool is designed for simplicity and joy, helping parents and kids craft fairy tales
+                    that spark imagination and bring smiles
+                    before bedtime.
+                </p>
+            </div>
+        </header>
+
+        <main>
+            <div id="generator-container" class="d-flex flex-column mb-3 align-items-center">
+                <div id="form-container" class="p-2">
+                    <form id="tale-generator" class="p-2">
+                        <input type="text" placeholder="Enter the topic of the fairy tale" autofocus required
+                            autocomplete="off" class="instructions" id="user-instructions" />
+                        <input class="submit-button" type="submit" value="Generate" />
+                    </form>
+                    <div class="hint">examples: fairies, treasure, friendship.</div>
+                </div>
+                <div class="tale hidden" id="tale">
+                </div>
+            </div>
+        </main>
+        <footer>This AI project was coded by <a href="https://github.com/ValeriaCaptain7/" target="_blank">Valeria
+                Panzetta</a> is <a href="https://github.com/ValeriaCaptain7/french-poem-generator"
+                target="_blank">open-sourced on GitHub</a>,
+            and it is <a href="https://ai-new-french-poem-generator.netlify.app/" target="_blank">hosted on Netlify</a>.
+        </footer>
+    </div>
+
+    <script src="src/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,195 @@
+/* CSS rules to specify families
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Oxygen', sans-serif;
+font-family: 'Maitree', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Maitree:wght@200;300;400;500&family=Oxygen:wght@300;400;700&family=Ubuntu:wght@300;400;500&display=swap');
+
+
+/* Color palette */
+:root {
+    --hot-pink: #EF7C8E;
+    --cream: #FAE8E0;
+    --peach: #fad071;
+    --violet: #b34bbe;
+    --rosewater: #D8A7B1;
+}
+
+
+body {
+    font-family: 'Maitree', serif;
+    text-align: center;
+    background: linear-gradient(270deg, var(--peach), var(--violet));
+    background-size: 400% 400%;
+    -webkit-animation: AnimationFairyTale 15s ease infinite;
+    -moz-animation: AnimationFairyTale 15s ease infinite;
+    animation: AnimationFairyTale 15s ease infinite;
+}
+
+@-webkit-keyframes AnimationFairyTale {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes AnimationFairyTale {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes AnimationFairyTale {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+.page-container {
+    margin: 40px auto;
+    max-width: 1240px;
+    line-height: 1.5;
+}
+
+header {
+    margin-bottom: 30px;
+    color: rgb(52, 48, 48);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+a {
+    color: var(--hot-pink);
+}
+
+a:visited {
+    color: white;
+}
+
+h2 {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.p-4 {
+    margin-bottom: 30px;
+    width: 80%;
+}
+
+#generator-container {
+    background-color: var(--cream);
+    width: 600px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+#form-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding: 60px;
+}
+
+form {
+    background-color: var(--cream);
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 30px;
+    box-shadow: 3px 3px 18px 5px rgba(88, 86, 86, 0.46);
+}
+
+.instructions {
+    padding: 16px;
+    border: 1px solid gray;
+    width: 80%;
+    font-size: 13px;
+    border-radius: 50px;
+    line-height: 20px;
+    color: black;
+}
+
+.hint {
+    font-size: 12px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.submit-button {
+    margin-left: 10px;
+    padding: 15px 24px;
+    width: 150px;
+    font-size: 14px;
+    color: white;
+    font-size: 16px;
+    background-color: var(--rosewater);
+    border: none;
+    border-radius: 50px;
+}
+
+.submit-button:hover {
+    background-color: var(--hot-pink);
+    box-shadow: 3px 3px 15px 5px rgba(150, 146, 146, 0.46);
+    transition: 0.2s;
+}
+
+#tale {
+    font-size: 15px;
+    background-color: var(--cream);
+    padding: 20px;
+    line-height: 2;
+    border-left: 3px solid var(--hot-pink);
+    box-shadow: 3px 3px 18px 5px rgba(88, 86, 86, 0.46);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 30px;
+    font-weight: 400;
+}
