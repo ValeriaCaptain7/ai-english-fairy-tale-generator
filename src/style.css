@@ -68,9 +68,15 @@ body {
 }
 
 .page-container {
-    margin: 40px auto;
-    max-width: 1240px;
+    margin: 20px auto;
+    max-width: 90%px;
     line-height: 1.5;
+}
+
+header,
+main,
+footer {
+    padding: 0 15px;
 }
 
 header {
@@ -111,23 +117,33 @@ p {
     line-height: 1.5;
 }
 
-.p-4 {
+h1,
+h2,
+p {
+    padding: 0 10px;
+}
+
+.description {
     margin-bottom: 30px;
     width: 80%;
 }
 
 #generator-container {
     background-color: var(--cream);
-    width: 600px;
-    margin: 0 auto;
     border-radius: 5px;
 }
 
 #form-container {
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
-    padding: 60px;
+}
+
+#generator-container,
+#form-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 15px;
 }
 
 form {
@@ -141,11 +157,12 @@ form {
 .instructions {
     padding: 16px;
     border: 1px solid gray;
-    width: 80%;
+    width: 100%;
     font-size: 13px;
     border-radius: 50px;
     line-height: 20px;
     color: black;
+    box-sizing: border-box;
 }
 
 .hint {
@@ -157,13 +174,14 @@ form {
 .submit-button {
     margin-left: 10px;
     padding: 15px 24px;
-    width: 150px;
     font-size: 14px;
     color: white;
     font-size: 16px;
     background-color: var(--rosewater);
     border: none;
     border-radius: 50px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .submit-button:hover {
@@ -192,4 +210,77 @@ footer {
     font-size: 13px;
     margin-top: 30px;
     font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p,
+    .hint,
+    footer {
+        font-size: 12px;
+    }
+
+    .description,
+    form {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        font-size: 11px;
+    }
+
+    .page-container {
+        margin: 10px auto;
+    }
+
+
+    h1 {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    p {
+        display: none;
+    }
+
+    .instructions,
+    .submit-button {
+        padding: 12px;
+        font-size: 12px;
+    }
+
+    #form-container {
+        padding: 30px 15px;
+    }
+
+    .instructions,
+    .submit-button {
+        padding: 12px;
+        font-size: 12px;
+        border-radius: 25px;
+    }
+
+    .submit-button:hover,
+    .submit-button:focus {
+        background-color: var(--hot-pink);
+        box-shadow: 0 0 8px var(--hot-pink);
+        outline: none;
+        transition: background-color 0.3s, box-shadow 0.3s;
+    }
 }

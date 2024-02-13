@@ -19,9 +19,9 @@
             <div class="d-flex align-items-center flex-column mb-3" style="height: 200px;">
                 <h1 class="mb-auto p-2">AI-Driven English Fairy Tale Generator for Sweet Dreams</h1>
                 <h2 class="mb-auto p-2">Generate Magical Bedtime Stories in a Few Seconds</h2>
-                <p class="mb-auto p-4">Welcome to our magical world with the <strong>AI English Fairy Tale
+                <p class="mb-auto p-2 description">Welcome to our magical world with the <strong>AI English Fairy Tale
                         Generator</strong>, perfect for families to share special bedtime
-                    moments. Our tool is designed for simplicity and joy, helping parents and kids craft fairy tales
+                    moments. Our tool is designed for helping parents and kids craft fairy tales
                     that spark imagination and bring smiles
                     before bedtime.
                 </p>
@@ -29,23 +29,27 @@
         </header>
 
         <main>
-            <div id="generator-container" class="d-flex flex-column mb-3 align-items-center">
-                <div id="form-container" class="p-2">
-                    <form id="tale-generator" class="p-2">
-                        <input type="text" placeholder="Enter the topic of the fairy tale" autofocus required
-                            autocomplete="off" class="instructions" id="user-instructions" />
-                        <input class="submit-button" type="submit" value="Generate" />
-                    </form>
-                    <div class="hint">examples: fairies, treasure, friendship.</div>
-                </div>
-                <div class="tale hidden" id="tale">
+            <div>
+                <div id="generator-container" class="d-flex flex-column mb-3 align-items-center">
+                    <div id="form-container" class="p-2">
+                        <form id="tale-generator" class="p-2">
+                            <input type="text" placeholder="Enter the topic" autofocus required autocomplete="off"
+                                class="instructions" id="user-instructions" />
+                            <input class="submit-button" type="submit" value="Generate" />
+                        </form>
+                        <div class="hint">examples: fairies, treasure, friendship.</div>
+                    </div>
+                    <div class="tale hidden" id="tale">
+                    </div>
                 </div>
             </div>
+
         </main>
         <footer>This AI project was coded by <a href="https://github.com/ValeriaCaptain7/" target="_blank">Valeria
                 Panzetta</a> is <a href="https://github.com/ValeriaCaptain7/ai-english-fairy-tale-generator"
                 target="_blank">open-sourced on GitHub</a>,
-            and it is <a href="https://ai-english-fairy-tale-generator.netlify.app/" target="_blank">hosted on Netlify</a>.
+            and it is <a href="https://ai-english-fairy-tale-generator.netlify.app/" target="_blank">hosted on
+                Netlify</a>.
         </footer>
     </div>
 
