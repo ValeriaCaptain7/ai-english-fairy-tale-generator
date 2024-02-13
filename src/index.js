@@ -14,8 +14,8 @@ function generateTale(event) {
   let instructionsInput = document.querySelector("#user-instructions");
   let apiKey = "49ecec9d222e3fb8o4502323fetf4ac1";
   let context =
-    "You are a parent and have 2 children aged between 3 and 6. Generate a sweet fairy tale, with positive message at the end in one of the following languages: English, Italian, or French language, to be read before bedtime. Maximum length: 15 lines.";
-  let prompt = `User instructions: Generate a sweet fairy tale for children in one of the following languages: English, Italian, or French language, about ${instructionsInput.value}. Add also maximum 2 emojis per line, Break down into paragraphs.`;
+    "You are parents and have 2 children between the ages of 3 and 6. Generate a sweet fairy tale, with a positive message at the end, in English and in Italian. The language of the fairy tale corresponds to the language of the keyword entered. Maximum length: 15 lines.";
+  let prompt = `User instructions: Generate a sweet fairy tale for children about ${instructionsInput.value}. Add also maximum 2 emojis per line, Break down into paragraphs.`;
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   let taleElement = document.querySelector("#tale");
